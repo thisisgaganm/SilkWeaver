@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Essential document metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#F6F1E8">
+    <meta name="description" content="Silk Weaver — timeless textiles, thoughtful craftsmanship,
+        and a contemporary expression of heritage.">
+
+    <title>SILK WEAVER — Woven With Intention</title>
+
+    <!--
+        External typography.
+        The website remains usable if the font service is unavailable.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <script>
+        // Lock scrolling only when JavaScript is available.
+        document.documentElement.classList.add("preloader-js");
+    </script>
+    <!-- Project styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Project interactions; defer waits until HTML parsing finishes -->
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    
+    <div class="site-preloader" id="site-preloader" aria-hidden="true">
+        <div class="site-preloader__content">
+            <span class="site-preloader__eyebrow">THE ART OF INDIAN SILK</span>
+
+            <div class="site-preloader__wordmark">
+                <span>SILK</span>
+                <span>WEAVER</span>
+            </div>
+
+            <div class="site-preloader__progress">
+                <span class="site-preloader__progress-bar"></span>
+            </div>
+
+            <span class="site-preloader__caption">Woven with intention.</span>
+        </div>
+    </div>
+
+    
+    <div class="custom-cursor" id="custom-cursor" aria-hidden="true">
+        <span class="custom-cursor__dot"></span>
+        <span class="custom-cursor__ring"></span>
+        <span class="custom-cursor__label">VIEW</span>
+    </div>
+
+    
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true">
+        <span class="scroll-progress__bar" id="scroll-progress-bar"></span>
+    </div>
+
+    <!-- Accessibility: allows keyboard users to skip navigation -->
+    <a class="skip-link" href="#main">
+        Skip to content
+    </a>
+
+    <!-- Announcement strip -->
+    <div class="announcement">
+        <p>
+            Thoughtfully made
+            <span aria-hidden="true">✳</span>
+            Meant to be treasured
+        </p>
+    </div>
+
+    
+
+    
+
+    <header class="site-header" id="site-header">
+        <nav class="container navigation" aria-label="Main navigation">
+
+            <!-- Brand wordmark -->
+            <a class="brand" href="#home" aria-label="Silk Weaver home">
+                <span class="brand__name">SILK WEAVER</span>
+                <span class="brand__tagline">WOVEN WITH INTENTION</span>
+            </a>
+
+            <!--
+            Primary links are shared by desktop and mobile.
+            JavaScript controls the mobile menu's open state.
+        -->
+            <div class="navigation__links" id="navigation-links" aria-label="Website sections">
+                <a href="#collection">Collections</a>
+                <a href="#story">Our Story</a>
+                <a href="#craft">Our Craft</a>
+                <a class="navigation__mobile-contact" href="#contact">
+                    Get in touch <span aria-hidden="true">↗</span>
+                </a>
+            </div>
+
+            <!-- Desktop call-to-action -->
+            <a class="navigation__cta" href="#contact">
+                Discover More <span aria-hidden="true">↗</span>
+            </a>
+
+            <!-- Accessible mobile menu toggle -->
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="navigation-links">
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+            </button>
+
+        </nav>
+    </header>
+
+    <!-- Main content placeholder for upcoming sections -->
+    <main id="main">
+        
+
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <!-- Full-bleed photography layer -->
+            <div class="hero__media" aria-hidden="true">
+                <img class="hero__image"
+                    src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=2400&q=90"
+                    alt="" fetchpriority="high" decoding="async" />
+            </div>
+
+            <!-- Multiple gradients create depth without extra image assets -->
+            <div class="hero__overlay" aria-hidden="true"></div>
+            <div class="hero__grain" aria-hidden="true"></div>
+
+            <!-- Main hero content -->
+            <div class="hero__content">
+                <p class="hero__eyebrow">
+                    <span class="hero__eyebrow-line"></span>
+                    The art of Indian silk
+                </p>
+
+                <h1 class="hero__title" id="hero-title">
+                    <span class="hero__title-line">
+                        <span class="hero__title-word">Woven</span>
+                    </span>
+                    <span class="hero__title-line hero__title-line--offset">
+                        <span class="hero__title-word">to be</span>
+                    </span>
+                    <span class="hero__title-line hero__title-line--accent">
+                        <span class="hero__title-word">remembered.</span>
+                    </span>
+                </h1>
+
+                <p class="hero__description">
+                    Discover the beauty of timeless silk, where heritage,
+                    artistry and every delicate thread come together.
+                </p>
+
+                <div class="hero__actions">
+                    <a class="hero__button" href="#collection">
+                        <span>Explore the collection</span>
+                        <span class="hero__button-icon" aria-hidden="true">↗</span>
+                    </a>
+
+                    <a class="hero__text-link" href="#story">
+                        Our story
+                        <span aria-hidden="true">↓</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Editorial details frame the hero composition -->
+            <div class="hero__side-note" aria-hidden="true">
+                <span>Tradition in every thread</span>
+            </div>
+
+            <div class="hero__bottom">
+                <p class="hero__edition">Crafted with intention. Worn with meaning.</p>
+
+                <a class="hero__scroll" href="#collection" aria-label="Scroll to the collection">
+                    <span class="hero__scroll-label">Scroll to discover</span>
+                    <span class="hero__scroll-track" aria-hidden="true">
+                        <span class="hero__scroll-progress"></span>
+                    </span>
+                </a>
+
+                <p class="hero__index" aria-hidden="true">01 <span>/</span> 05</p>
+            </div>
+        </section>
+
+        <!-- These anchors will connect to upcoming page sections. -->
+        
+
+        <section class="collection-section" id="collection" aria-labelledby="collection-title">
+
+            <div class="collection-section__inner">
+
+                <!-- Section introduction -->
+                <header class="collection-intro reveal-on-scroll" data-reveal="fade">
+                    <div class="collection-intro__topline">
+                        <span class="section-eyebrow">
+                            <span class="section-eyebrow__dot"></span>
+                            The SILK WEAVER edit
+                        </span>
+
+                        <span class="collection-intro__number">COLLECTION 01 — 03</span>
+                    </div>
+
+                    <div class="collection-intro__main">
+                        <h2 class="collection-intro__title" id="collection-title">
+                            Made to be
+                            <em>cherished.</em>
+                        </h2>
+
+                        <div class="collection-intro__aside">
+                            <p>
+                                A thoughtful selection of timeless textiles,
+                                intricate craftsmanship and colours inspired
+                                by the beauty of tradition.
+                            </p>
+
+                            <a class="collection-intro__link" href="#story">
+                                The story behind the weave
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Collection cards -->
+                <div class="collection-grid" data-stagger>
+
+                    <!-- Card 01 -->
+                    <article class="collection-card reveal-on-scroll" data-interactive-card>
+                        <a class="collection-card__visual" href="#contact" aria-label="Discover heritage silk">
+
+                            <img class="collection-card__image"
+                                src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1100&q=85"
+                                alt="Richly coloured Indian textile with intricate traditional detailing" loading="lazy"
+                                decoding="async" />
+
+                            <span class="collection-card__index">01 / 03</span>
+
+                            <span class="collection-card__view">
+                                <span>Discover</span>
+                                <span aria-hidden="true">↗</span>
+                            </span>
+                        </a>
+
+                        <div class="collection-card__details">
+                            <div>
+                                <p class="collection-card__category">Timeless classics</p>
+                                <h3 class="collection-card__title">Heritage Silk</h3>
+                            </div>
+
+                            <span class="collection-card__arrow" aria-hidden="true">↗</span>
+                        </div>
+                    </article>
+
+                    <!-- Card 02 -->
+                    <article class="collection-card reveal-on-scroll" data-interactive-card>
+                        <a class="collection-card__visual" href="#contact" aria-label="Discover contemporary silk">
+
+                            <img class="collection-card__image"
+                                src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1100&q=85"
+                                alt="Elegant fabric and fashion detail in a rich, sophisticated colour palette"
+                                loading="lazy" decoding="async" />
+
+                            <span class="collection-card__index">02 / 03</span>
+
+                            <span class="collection-card__view">
+                                <span>Discover</span>
+                                <span aria-hidden="true">↗</span>
+                            </span>
+                        </a>
+
+                        <div class="collection-card__details">
+                            <div>
+                                <p class="collection-card__category">Modern expression</p>
+                                <h3 class="collection-card__title">Contemporary Silk</h3>
+                            </div>
+
+                            <span class="collection-card__arrow" aria-hidden="true">↗</span>
+                        </div>
+                    </article>
+
+                    <!-- Card 03 -->
+                    <article class="collection-card reveal-on-scroll" data-interactive-card>
+                        <a class="collection-card__visual" href="#contact" aria-label="Discover occasion silk">
+
+                            <img class="collection-card__image"
+                                src="assets/images/occasionEdit.jpeg"
+                                alt="Textile-inspired fashion detail presented in warm editorial lighting"
+                                loading="lazy" decoding="async" />
+
+                            <span class="collection-card__index">03 / 03</span>
+
+                            <span class="collection-card__view">
+                                <span>Discover</span>
+                                <span aria-hidden="true">↗</span>
+                            </span>
+                        </a>
+
+                        <div class="collection-card__details">
+                            <div>
+                                <p class="collection-card__category">Moments that matter</p>
+                                <h3 class="collection-card__title">Occasion Edit</h3>
+                            </div>
+
+                            <span class="collection-card__arrow" aria-hidden="true">↗</span>
+                        </div>
+                    </article>
+
+                </div>
+
+                
+                <section class="silk-gallery" id="silk-gallery" aria-labelledby="silk-gallery-title">
+                    <div class="silk-gallery__heading reveal-on-scroll">
+                        <span class="section-eyebrow">
+                            <span class="section-eyebrow__dot"></span>
+                            A closer look
+                        </span>
+                        <h2 class="silk-gallery__title" id="silk-gallery-title">
+                            The beauty is in the <em>details.</em>
+                        </h2>
+                        <p class="silk-gallery__description">
+                            Explore the texture, colour and quiet character of silk.
+                        </p>
+                    </div>
+
+                    <div class="silk-gallery__layout">
+                        <div class="silk-gallery__featured" aria-live="polite">
+                            <img class="silk-gallery__image" id="silk-gallery-image"
+                                src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"
+                                alt="Silk textile in rich traditional colours" loading="lazy" decoding="async" />
+
+                            <div class="silk-gallery__image-shade" aria-hidden="true"></div>
+
+                            <div class="silk-gallery__caption">
+                                <span class="silk-gallery__caption-index" id="silk-gallery-index">01 / 04</span>
+                                <div>
+                                    <h3 id="silk-gallery-caption">The timeless weave</h3>
+                                    <p id="silk-gallery-subcaption">Texture that tells a story.</p>
+                                </div>
+                            </div>
+
+                            <span class="silk-gallery__counter-mark" aria-hidden="true">SW.</span>
+                        </div>
+
+                        <div class="silk-gallery__side">
+                            <p class="silk-gallery__instruction">SELECT A DETAIL</p>
+
+                            <div class="silk-gallery__thumbnails" role="group" aria-label="Choose a silk gallery image">
+                                <button class="silk-gallery__thumbnail is-active" type="button" data-gallery-index="0"
+                                    aria-pressed="true" aria-label="View the timeless weave">
+                                    <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&amp;fit=crop&amp;w=400&amp;q=75"
+                                        alt="" loading="lazy" />
+                                    <span class="silk-gallery__thumbnail-number">01</span>
+                                    <span class="silk-gallery__thumbnail-name">The weave</span>
+                                    <span class="silk-gallery__thumbnail-arrow" aria-hidden="true">↗</span>
+                                </button>
+
+                                <button class="silk-gallery__thumbnail" type="button" data-gallery-index="1"
+                                    aria-pressed="false" aria-label="View colour and character">
+                                    <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&amp;fit=crop&amp;w=400&amp;q=75"
+                                        alt="" loading="lazy" />
+                                    <span class="silk-gallery__thumbnail-number">02</span>
+                                    <span class="silk-gallery__thumbnail-name">Colour &amp; character</span>
+                                    <span class="silk-gallery__thumbnail-arrow" aria-hidden="true">↗</span>
+                                </button>
+
+                                <button class="silk-gallery__thumbnail" type="button" data-gallery-index="2"
+                                    aria-pressed="false" aria-label="View the occasion edit">
+                                    <img src="assets/images/occasionEdit.jpeg" alt="" loading="lazy" />
+                                    <span class="silk-gallery__thumbnail-number">03</span>
+                                    <span class="silk-gallery__thumbnail-name">The occasion edit</span>
+                                    <span class="silk-gallery__thumbnail-arrow" aria-hidden="true">↗</span>
+                                </button>
+
+                                <button class="silk-gallery__thumbnail" type="button" data-gallery-index="3"
+                                    aria-pressed="false" aria-label="View timeless elegance">
+                                    <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&amp;fit=crop&amp;w=400&amp;q=75"
+                                        alt="" loading="lazy" />
+                                    <span class="silk-gallery__thumbnail-number">04</span>
+                                    <span class="silk-gallery__thumbnail-name">Timeless elegance</span>
+                                    <span class="silk-gallery__thumbnail-arrow" aria-hidden="true">↗</span>
+                                </button>
+                            </div>
+
+                            <p class="silk-gallery__note">
+                                Every detail deserves a closer look.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Closing statement -->
+                <div class="collection-footer reveal-on-scroll">
+                    <p>Every thread holds a story.</p>
+
+                    <a class="collection-footer__link" href="#contact">
+                        Find your favourite
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        
+
+        <section class="story-section" id="story" aria-labelledby="story-title">
+
+            <div class="story-section__inner">
+
+                <!-- Editorial section heading -->
+                <div class="story-section__eyebrow reveal-on-scroll" data-reveal="fade">
+                    <span class="section-eyebrow">
+                        <span class="section-eyebrow__dot"></span>
+                        Beyond the fabric
+                    </span>
+
+                    <span class="story-section__edition">THE SILK WEAVER PHILOSOPHY</span>
+                </div>
+
+                <!-- Main split-screen composition -->
+                <div class="story-layout">
+
+                    <!-- Large craft photograph -->
+                    <div class="story-visual reveal-on-scroll motion-image-reveal" data-reveal="left">
+
+                        <div class="story-visual__frame">
+                            <img class="story-visual__image"
+                                src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=1400&q=85"
+                                alt="Traditional textile-making process and artisan craftsmanship" loading="lazy"
+                                decoding="async" />
+
+                            <div class="story-visual__shade" aria-hidden="true"></div>
+
+                            <div class="story-visual__caption">
+                                <span class="story-visual__caption-number">01</span>
+                                <span>Made with patience. Finished with purpose.</span>
+                            </div>
+                        </div>
+
+                        <!-- Floating editorial note -->
+                        <div class="story-stamp" aria-hidden="true">
+                            <svg class="story-stamp__graphic" viewBox="0 0 120 120" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="60" cy="60" r="55" stroke="currentColor" stroke-width="0.8" />
+                                <circle cx="60" cy="60" r="44" stroke="currentColor" stroke-width="0.5"
+                                    stroke-dasharray="2 4" />
+                                <path d="M60 31L66 53L89 60L66 67L60 89L54 67L31 60L54 53Z" stroke="currentColor"
+                                    stroke-width="1" />
+                                <circle cx="60" cy="60" r="4" fill="currentColor" />
+                            </svg>
+
+                            <span>Rooted in<br />tradition</span>
+                        </div>
+                    </div>
+
+                    <!-- Story copy -->
+                    <div class="story-copy">
+
+                        <p class="story-copy__overline reveal-on-scroll" data-reveal="right">
+                            A legacy in every thread
+                        </p>
+
+                        <h2 class="story-copy__title reveal-on-scroll" id="story-title" data-reveal="right">
+                            Not simply worn.
+                            <em>Deeply felt.</em>
+                        </h2>
+
+                        <div class="story-copy__body reveal-on-scroll" data-reveal="right">
+                            <p class="story-copy__lead">
+                                Some things are made to be more than beautiful.
+                                They are made to carry meaning.
+                            </p>
+
+                            <p>
+                                Silk has always held a special place in the stories
+                                we share, the traditions we preserve and the moments
+                                we choose to remember.
+                            </p>
+
+                            <p>
+                                At SILK WEAVER, every detail is an invitation to
+                                appreciate the artistry behind the fabric — from
+                                the character of its texture to the elegance of
+                                its final drape.
+                            </p>
+                        </div>
+
+                        <a class="story-copy__link reveal-on-scroll" href="#craft" data-reveal="right">
+                            <span>Explore our craftsmanship</span>
+                            <span class="story-copy__link-icon" aria-hidden="true">↗</span>
+                        </a>
+
+                        <!-- Decorative thread motif -->
+                        <div class="story-thread" aria-hidden="true">
+                            <span class="story-thread__line"></span>
+                            <span class="story-thread__diamond"></span>
+                            <span class="story-thread__line"></span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Brand principles -->
+                <div class="story-principles" data-stagger>
+
+                    <article class="story-principle reveal-on-scroll" data-reveal="up">
+                        <span class="story-principle__number">01</span>
+                        <div>
+                            <h3>Thoughtful design</h3>
+                            <p>Details that feel considered, balanced and enduring.</p>
+                        </div>
+                    </article>
+
+                    <article class="story-principle reveal-on-scroll" data-reveal="up">
+                        <span class="story-principle__number">02</span>
+                        <div>
+                            <h3>Respect for craft</h3>
+                            <p>An appreciation for the skill behind every weave.</p>
+                        </div>
+                    </article>
+
+                    <article class="story-principle reveal-on-scroll" data-reveal="up">
+                        <span class="story-principle__number">03</span>
+                        <div>
+                            <h3>Made for memories</h3>
+                            <p>Pieces chosen for moments worth holding on to.</p>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        
+
+        <section class="craft-section" id="craft" aria-labelledby="craft-title">
+            <div class="craft-section__inner">
+
+                <!-- Section introduction -->
+                <header class="craft-heading reveal-on-scroll" data-reveal="fade">
+                    <div class="craft-heading__eyebrow">
+                        <span class="section-eyebrow">
+                            <span class="section-eyebrow__dot"></span>
+                            The making of silk
+                        </span>
+                        <span class="craft-heading__edition">AN APPRECIATION OF CRAFT</span>
+                    </div>
+
+                    <div class="craft-heading__content">
+                        <h2 class="craft-heading__title" id="craft-title">
+                            Beauty takes
+                            <em>time.</em>
+                        </h2>
+
+                        <p class="craft-heading__description">
+                            Behind every beautiful textile lies a journey of
+                            materials, skill and considered detail. Explore
+                            the stages that can bring a piece of silk to life.
+                        </p>
+                    </div>
+                </header>
+
+                <!-- Timeline layout -->
+                <div class="craft-timeline" data-stagger>
+
+                    <!-- Timeline rail -->
+                    <div class="craft-timeline__rail" aria-hidden="true">
+                        <span class="craft-timeline__rail-base"></span>
+                        <span class="craft-timeline__rail-progress" id="craft-progress"></span>
+                    </div>
+
+                    <!-- Stage 01 -->
+                    <article class="craft-step reveal-on-scroll is-current" data-craft-step="1" data-reveal="left">
+                        <div class="craft-step__meta">
+                            <span class="craft-step__number">01</span>
+                            <span class="craft-step__label">The beginning</span>
+                        </div>
+
+                        <div class="craft-step__visual">
+                            <img class="craft-step__image"
+                                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=85"
+                                alt="Close-up of natural textile fibres and thread" loading="lazy" decoding="async" />
+                            <span class="craft-step__image-caption">01 — Material & texture</span>
+                        </div>
+
+                        <div class="craft-step__copy">
+                            <p class="craft-step__overline">A considered beginning</p>
+                            <h3 class="craft-step__title">It starts with a thread.</h3>
+                            <p class="craft-step__description">
+                                The character of a textile begins with its material.
+                                Texture, colour and the qualities of the yarn all
+                                contribute to the fabric's final expression.
+                            </p>
+                            <span class="craft-step__detail">
+                                <span class="craft-step__detail-dot"></span>
+                                Material selection
+                            </span>
+                        </div>
+                    </article>
+
+                    <!-- Stage 02 -->
+                    <article class="craft-step craft-step--reverse reveal-on-scroll" data-craft-step="2"
+                        data-reveal="right">
+                        <div class="craft-step__meta">
+                            <span class="craft-step__number">02</span>
+                            <span class="craft-step__label">The technique</span>
+                        </div>
+
+                        <div class="craft-step__visual">
+                            <img class="craft-step__image"
+                                src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=1200&q=85"
+                                alt="Hands engaged in a detailed making process" loading="lazy" decoding="async" />
+                            <span class="craft-step__image-caption">02 — Skill & precision</span>
+                        </div>
+
+                        <div class="craft-step__copy">
+                            <p class="craft-step__overline">Skill in every movement</p>
+                            <h3 class="craft-step__title">Patience shapes the pattern.</h3>
+                            <p class="craft-step__description">
+                                Repetition, precision and an understanding of the
+                                material help transform individual threads into
+                                a considered textile design.
+                            </p>
+                            <span class="craft-step__detail">
+                                <span class="craft-step__detail-dot"></span>
+                                Technique & detail
+                            </span>
+                        </div>
+                    </article>
+
+                    <!-- Stage 03 -->
+                    <article class="craft-step reveal-on-scroll" data-craft-step="3" data-reveal="up">
+                        <div class="craft-step__meta">
+                            <span class="craft-step__number">03</span>
+                            <span class="craft-step__label">The finishing</span>
+                        </div>
+
+                        <div class="craft-step__visual">
+                            <img class="craft-step__image"
+                                src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=1200&q=85"
+                                alt="Finished textile with a rich, detailed surface" loading="lazy" decoding="async" />
+                            <span class="craft-step__image-caption">03 — Form & finish</span>
+                        </div>
+
+                        <div class="craft-step__copy">
+                            <p class="craft-step__overline">The final expression</p>
+                            <h3 class="craft-step__title">Every detail finds its place.</h3>
+                            <p class="craft-step__description">
+                                Finishing brings the design together. The final
+                                texture, drape and details shape how the textile
+                                looks, feels and is experienced.
+                            </p>
+                            <span class="craft-step__detail">
+                                <span class="craft-step__detail-dot"></span>
+                                Finishing & presentation
+                            </span>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Closing statement -->
+                <footer class="craft-closing reveal-on-scroll">
+                    <span class="craft-closing__ornament" aria-hidden="true">✳</span>
+                    <p>Made slowly. Appreciated for a lifetime.</p>
+                    <a href="#contact" class="craft-closing__link">
+                        Discover SILK WEAVER
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                </footer>
+
+            </div>
+        </section>
+
+        
+
+        <section class="manifesto-section" id="manifesto" aria-labelledby="manifesto-title">
+            <!-- Decorative background elements -->
+            <div class="manifesto-section__decoration" aria-hidden="true">
+                <span class="manifesto-section__orb manifesto-section__orb--one"></span>
+                <span class="manifesto-section__orb manifesto-section__orb--two"></span>
+                <span class="manifesto-section__line manifesto-section__line--one"></span>
+                <span class="manifesto-section__line manifesto-section__line--two"></span>
+            </div>
+
+            <div class="manifesto-section__inner">
+                <!-- Small editorial heading -->
+                <header class="manifesto-heading reveal-on-scroll">
+                    <span class="section-eyebrow manifesto-heading__eyebrow">
+                        <span class="section-eyebrow__dot"></span>
+                        A thought woven into every thread
+                    </span>
+
+                    <span class="manifesto-heading__index">
+                        OUR MANIFESTO — 07
+                    </span>
+                </header>
+
+                <!-- Main statement -->
+                <div class="manifesto-content">
+                    <p class="manifesto-content__intro reveal-on-scroll">
+                        In a world that moves faster,
+                    </p>
+
+                    <h2 class="manifesto-content__title" id="manifesto-title">
+                        <span class="manifesto-line reveal-on-scroll">
+                            <span>choose what</span>
+                        </span>
+
+                        <span class="manifesto-line manifesto-line--offset reveal-on-scroll">
+                            <span>is <em>timeless.</em></span>
+                        </span>
+                    </h2>
+
+                    <div class="manifesto-content__bottom">
+                        <span class="manifesto-content__ornament reveal-on-scroll" aria-hidden="true">
+                            <svg viewBox="0 0 80 80" fill="none">
+                                <circle cx="40" cy="40" r="29" />
+                                <circle cx="40" cy="40" r="19" />
+                                <path d="M40 4V76M4 40H76M14.5 14.5L65.5 65.5M65.5 14.5L14.5 65.5" />
+                                <path d="M40 25L55 40L40 55L25 40Z" />
+                            </svg>
+                        </span>
+
+                        <div class="manifesto-content__message reveal-on-scroll">
+                            <p>
+                                We believe the most meaningful things are never
+                                defined by a passing moment, but by the feeling
+                                they leave behind.
+                            </p>
+
+                            <p>
+                                A texture you remember. A detail you notice.
+                                A piece that becomes part of your story.
+                            </p>
+
+                            <a class="manifesto-link" href="#contact">
+                                <span>Discover the SILK WEAVER philosophy</span>
+                                <span class="manifesto-link__arrow" aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Oversized decorative brand name -->
+                <div class="manifesto-wordmark" aria-hidden="true">
+                    <span class="manifesto-wordmark__text">SILK WEAVER</span>
+                    <span class="manifesto-wordmark__rule"></span>
+                </div>
+
+                <!-- Bottom caption -->
+                <footer class="manifesto-footer reveal-on-scroll">
+                    <span>ROOTED IN HERITAGE</span>
+                    <span class="manifesto-footer__symbol" aria-hidden="true">✳</span>
+                    <span>MADE FOR TOMORROW</span>
+                </footer>
+            </div>
+        </section>
+
+
+        
+        <section class="testimonial-section" id="testimonials" aria-labelledby="testimonial-title">
+            <div class="testimonial-section__inner">
+
+                <header class="testimonial-header reveal-on-scroll">
+                    <div>
+                        <span class="section-eyebrow">
+                            <span class="section-eyebrow__dot"></span>
+                            Words that stay with us
+                        </span>
+                        <h2 class="testimonial-header__title" id="testimonial-title">
+                            Woven into <em>their stories.</em>
+                        </h2>
+                    </div>
+
+                    <p class="testimonial-header__description">
+                        Every meaningful piece carries a memory.
+                        Here are a few words inspired by the experience of silk.
+                    </p>
+                </header>
+
+                <div class="testimonial-stage reveal-on-scroll" id="testimonial-stage" aria-roledescription="carousel"
+                    aria-label="Customer testimonials">
+
+                    <span class="testimonial-stage__quote-mark" aria-hidden="true">“</span>
+
+                    <div class="testimonial-content" id="testimonial-content" aria-live="polite">
+                        <p class="testimonial-content__quote" id="testimonial-quote">
+                            The beauty is in the details — the texture, the colour,
+                            and the feeling of wearing something truly special.
+                        </p>
+
+                        <div class="testimonial-content__footer">
+                            <div class="testimonial-author">
+                                <span class="testimonial-author__line" aria-hidden="true"></span>
+                                <div>
+                                    <p class="testimonial-author__name" id="testimonial-name">
+                                        Customer name
+                                    </p>
+                                    <p class="testimonial-author__detail" id="testimonial-detail">
+                                        Customer feedback
+                                    </p>
+                                </div>
+                            </div>
+
+                            <span class="testimonial-content__index" id="testimonial-index">
+                                01 <span>/</span> 03
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-controls reveal-on-scroll">
+                    <p class="testimonial-controls__note">A collection of personal impressions</p>
+
+                    <div class="testimonial-controls__actions">
+                        <div class="testimonial-dots" id="testimonial-dots" aria-label="Choose a testimonial">
+                            <button type="button" class="testimonial-dot is-active" data-testimonial-index="0"
+                                aria-label="Show testimonial 1" aria-pressed="true"></button>
+                            <button type="button" class="testimonial-dot" data-testimonial-index="1"
+                                aria-label="Show testimonial 2" aria-pressed="false"></button>
+                            <button type="button" class="testimonial-dot" data-testimonial-index="2"
+                                aria-label="Show testimonial 3" aria-pressed="false"></button>
+                        </div>
+
+                        <div class="testimonial-arrows">
+                            <button type="button" class="testimonial-arrow" id="testimonial-previous"
+                                aria-label="Previous testimonial">
+                                <span aria-hidden="true">←</span>
+                            </button>
+                            <button type="button" class="testimonial-arrow" id="testimonial-next"
+                                aria-label="Next testimonial">
+                                <span aria-hidden="true">→</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-signature" aria-hidden="true">
+                    <span>SILK WEAVER</span>
+                    <span class="testimonial-signature__line"></span>
+                    <span>THOUGHTFULLY REMEMBERED</span>
+                </div>
+
+            </div>
+        </section>
+
+        
+        <section class="faq-section" id="faq" aria-labelledby="faq-title">
+            <div class="faq-section__inner">
+
+                <header class="faq-header reveal-on-scroll">
+                    <div class="faq-header__main">
+                        <span class="section-eyebrow">
+                            <span class="section-eyebrow__dot"></span>
+                            A little clarity
+                        </span>
+
+                        <h2 class="faq-header__title" id="faq-title">
+                            Good to <em>know.</em>
+                        </h2>
+                    </div>
+
+                    <p class="faq-header__description">
+                        A few helpful answers to make your SILK WEAVER
+                        experience a little simpler.
+                    </p>
+                </header>
+
+                <div class="faq-layout">
+                    <div class="faq-aside reveal-on-scroll">
+                        <span class="faq-aside__number">18</span>
+                        <p class="faq-aside__label">THE DETAILS MATTER</p>
+                        <p class="faq-aside__text">
+                            Thoughtful choices begin with the right information.
+                            If something else is on your mind, we are happy to help.
+                        </p>
+
+                        <a class="faq-aside__link" href="#contact">
+                            Ask us a question
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+
+                    <div class="faq-list reveal-on-scroll" id="faq-list">
+
+                        <article class="faq-item is-open">
+                            <h3 class="faq-item__heading">
+                                <button class="faq-item__trigger" id="faq-trigger-1" type="button" aria-expanded="true"
+                                    aria-controls="faq-panel-1">
+                                    <span class="faq-item__number">01</span>
+                                    <span class="faq-item__question">What can I discover at SILK WEAVER?</span>
+                                    <span class="faq-item__icon" aria-hidden="true"></span>
+                                </button>
+                            </h3>
+                            <div class="faq-item__panel" id="faq-panel-1" role="region" aria-labelledby="faq-trigger-1">
+                                <div class="faq-item__answer">
+                                    <p>
+                                        Explore our silk collections and discover the colours,
+                                        textures, and details that make each piece distinctive.
+                                        Contact us to learn about the products currently available.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="faq-item">
+                            <h3 class="faq-item__heading">
+                                <button class="faq-item__trigger" id="faq-trigger-2" type="button" aria-expanded="false"
+                                    aria-controls="faq-panel-2">
+                                    <span class="faq-item__number">02</span>
+                                    <span class="faq-item__question">How should I care for silk?</span>
+                                    <span class="faq-item__icon" aria-hidden="true"></span>
+                                </button>
+                            </h3>
+                            <div class="faq-item__panel" id="faq-panel-2" role="region" aria-labelledby="faq-trigger-2"
+                                hidden>
+                                <div class="faq-item__answer">
+                                    <p>
+                                        Care requirements depend on the fabric, dye, and finish.
+                                        Always check the garment label or product-specific care
+                                        instructions before washing, ironing, or storing silk.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="faq-item">
+                            <h3 class="faq-item__heading">
+                                <button class="faq-item__trigger" id="faq-trigger-3" type="button" aria-expanded="false"
+                                    aria-controls="faq-panel-3">
+                                    <span class="faq-item__number">03</span>
+                                    <span class="faq-item__question">How can I enquire about a product?</span>
+                                    <span class="faq-item__icon" aria-hidden="true"></span>
+                                </button>
+                            </h3>
+                            <div class="faq-item__panel" id="faq-panel-3" role="region" aria-labelledby="faq-trigger-3"
+                                hidden>
+                                <div class="faq-item__answer">
+                                    <p>
+                                        Visit our contact section and share the product or collection
+                                        you are interested in. Our team can then provide details
+                                        about availability and the next steps.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="faq-item">
+                            <h3 class="faq-item__heading">
+                                <button class="faq-item__trigger" id="faq-trigger-4" type="button" aria-expanded="false"
+                                    aria-controls="faq-panel-4">
+                                    <span class="faq-item__number">04</span>
+                                    <span class="faq-item__question">Can I make a business or wholesale enquiry?</span>
+                                    <span class="faq-item__icon" aria-hidden="true"></span>
+                                </button>
+                            </h3>
+                            <div class="faq-item__panel" id="faq-panel-4" role="region" aria-labelledby="faq-trigger-4"
+                                hidden>
+                                <div class="faq-item__answer">
+                                    <p>
+                                        You can use our contact form to describe your business,
+                                        wholesale, or collaboration requirements. Availability
+                                        and terms can be discussed directly with the team.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="faq-item">
+                            <h3 class="faq-item__heading">
+                                <button class="faq-item__trigger" id="faq-trigger-5" type="button" aria-expanded="false"
+                                    aria-controls="faq-panel-5">
+                                    <span class="faq-item__number">05</span>
+                                    <span class="faq-item__question">Where can I ask another question?</span>
+                                    <span class="faq-item__icon" aria-hidden="true"></span>
+                                </button>
+                            </h3>
+                            <div class="faq-item__panel" id="faq-panel-5" role="region" aria-labelledby="faq-trigger-5"
+                                hidden>
+                                <div class="faq-item__answer">
+                                    <p>
+                                        Head to our contact section and send us your enquiry.
+                                        Please use the company's confirmed contact details when
+                                        you are ready to publish the website.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <footer class="faq-footer reveal-on-scroll">
+                    <span>THE RIGHT DETAILS MAKE ALL THE DIFFERENCE</span>
+                    <span class="faq-footer__ornament" aria-hidden="true">✳</span>
+                    <a href="#contact">Still curious? Talk to us <span aria-hidden="true">↗</span></a>
+                </footer>
+
+            </div>
+        </section>
+        
+        <section class="silk-journal" id="silk-journal" aria-labelledby="silk-journal-title">
+            <div class="silk-journal__texture" aria-hidden="true"></div>
+
+            <div class="silk-journal__inner">
+
+                <!-- Editorial label -->
+                <div class="silk-journal__eyebrow reveal-on-scroll">
+                    <span class="silk-journal__eyebrow-line"></span>
+                    <span>A LETTER FROM SILK WEAVER</span>
+                    <span class="silk-journal__eyebrow-line"></span>
+                </div>
+
+                <!-- Main editorial content -->
+                <div class="silk-journal__content">
+
+                    <p class="silk-journal__pretitle reveal-on-scroll">
+                        A little beauty, delivered occasionally.
+                    </p>
+
+                    <h2 class="silk-journal__title reveal-on-scroll" id="silk-journal-title">
+                        The art of
+                        <span class="silk-journal__title-accent">slowing down.</span>
+                    </h2>
+
+                    <p class="silk-journal__description reveal-on-scroll">
+                        Enter the world of silk through stories of craftsmanship,
+                        timeless style, thoughtful details and the beauty of things
+                        made to last.
+                    </p>
+
+                    <!-- Newsletter form -->
+                    <form class="silk-journal__form reveal-on-scroll" id="silk-journal-form" novalidate>
+                        <label class="silk-journal__label" for="silk-journal-email">
+                            YOUR EMAIL ADDRESS
+                        </label>
+
+                        <div class="silk-journal__input-wrap">
+                            <input class="silk-journal__input" id="silk-journal-email" name="email" type="email"
+                                placeholder="you@example.com" autocomplete="email"
+                                aria-describedby="silk-journal-status" required>
+
+                            <button class="silk-journal__submit" type="submit" aria-label="Submit your email address">
+                                <span>Stay in the loop</span>
+                                <span class="silk-journal__submit-arrow" aria-hidden="true">
+                                    ↗
+                                </span>
+                            </button>
+                        </div>
+
+                        <p class="silk-journal__status" id="silk-journal-status" role="status" aria-live="polite"></p>
+
+                        <p class="silk-journal__privacy">
+                            Thoughtful notes only. No unnecessary noise.
+                        </p>
+                    </form>
+                </div>
+
+                <!-- Decorative editorial stamp -->
+                <div class="silk-journal__stamp" aria-hidden="true">
+                    <svg class="silk-journal__stamp-svg" viewBox="0 0 160 160" fill="none">
+                        <circle cx="80" cy="80" r="73" stroke="currentColor" />
+                        <circle cx="80" cy="80" r="62" stroke="currentColor" stroke-dasharray="2 5" />
+                        <path d="M80 42C65 58 59 72 80 116C101 72 95 58 80 42Z" stroke="currentColor"
+                            stroke-width="1.2" />
+                        <path d="M80 55V105M62 72C70 75 76 82 80 91M98 72C90 75 84 82 80 91" stroke="currentColor"
+                            stroke-width="1.2" />
+                        <path d="M48 80H66M94 80H112" stroke="currentColor" stroke-width="1.2" />
+                    </svg>
+
+                    <span class="silk-journal__stamp-top">MADE WITH INTENTION</span>
+                    <span class="silk-journal__stamp-bottom">SILK WEAVER · EST. IN CRAFT</span>
+                </div>
+
+                <!-- Bottom signature -->
+                <div class="silk-journal__bottom reveal-on-scroll">
+                    <span>CRAFTED WITH CARE</span>
+                    <span class="silk-journal__bottom-symbol" aria-hidden="true">✳</span>
+                    <span>WOVEN WITH INTENTION</span>
+                </div>
+
+            </div>
+        </section>
+        
+        <section class="featured-silk" id="featured-silk" aria-labelledby="featured-silk-title">
+            <div class="featured-silk__inner">
+
+                <!-- Section introduction -->
+                <header class="featured-silk__header">
+                    <div class="featured-silk__heading reveal-on-scroll">
+                        <span class="featured-silk__eyebrow">
+                            <span class="featured-silk__eyebrow-dot"></span>
+                            THE SILK EDIT · 01
+                        </span>
+
+                        <h2 id="featured-silk-title">
+                            Beauty in every
+                            <span>thread.</span>
+                        </h2>
+                    </div>
+
+                    <div class="featured-silk__intro reveal-on-scroll">
+                        <p>
+                            Discover the details that make silk extraordinary —
+                            the fluid drape, the richness of its texture, and the
+                            character woven into every design.
+                        </p>
+
+                        <a class="featured-silk__text-link" href="#collection">
+                            Explore collections
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </header>
+
+                <!-- Large editorial feature -->
+                <article class="featured-silk__hero reveal-on-scroll">
+                    <div class="featured-silk__hero-image">
+                        <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=2000&q=85"
+                            alt="Richly textured traditional Indian silk fabric" loading="lazy">
+
+                        <div class="featured-silk__hero-shade"></div>
+
+                        <div class="featured-silk__hero-copy">
+                            <span>THE ART OF DRAPE</span>
+                            <h3>Made to move<br>with you.</h3>
+                        </div>
+
+                        <span class="featured-silk__hero-number" aria-hidden="true">
+                            01 / 03
+                        </span>
+                    </div>
+
+                    <div class="featured-silk__hero-caption">
+                        <p>
+                            <span class="featured-silk__caption-label">A STUDY IN TEXTURE</span>
+                            <span>Where tradition meets a modern sensibility.</span>
+                        </p>
+
+                        <a href="#contact" aria-label="Enquire about featured silk">
+                            Enquire about this edit
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Horizontal collection strip -->
+                <div class="featured-silk__gallery-heading reveal-on-scroll">
+                    <div>
+                        <span class="featured-silk__eyebrow">A CLOSER LOOK</span>
+                        <h3>Details worth noticing.</h3>
+                    </div>
+
+                    <div class="featured-silk__controls">
+                        <button class="featured-silk__arrow" id="featured-silk-prev" type="button"
+                            aria-label="Scroll to previous designs" aria-controls="featured-silk-track">
+                            <span aria-hidden="true">←</span>
+                        </button>
+
+                        <button class="featured-silk__arrow" id="featured-silk-next" type="button"
+                            aria-label="Scroll to next designs" aria-controls="featured-silk-track">
+                            <span aria-hidden="true">→</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Horizontally scrollable image track -->
+                <div class="featured-silk__track" id="featured-silk-track" tabindex="0"
+                    aria-label="Silk detail gallery. Scroll horizontally to explore.">
+                    <article class="featured-silk__tile">
+                        <div class="featured-silk__tile-image">
+                            <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=1000&q=85"
+                                alt="Close-up of warm-toned woven textile" loading="lazy">
+                            <span class="featured-silk__tile-index">01</span>
+                        </div>
+                        <div class="featured-silk__tile-caption">
+                            <h4>The texture</h4>
+                            <span>Touch of tradition</span>
+                        </div>
+                    </article>
+
+                    <article class="featured-silk__tile">
+                        <div class="featured-silk__tile-image">
+                            <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1000&q=85"
+                                alt="Elegant fabric with a detailed textile pattern" loading="lazy">
+                            <span class="featured-silk__tile-index">02</span>
+                        </div>
+                        <div class="featured-silk__tile-caption">
+                            <h4>The pattern</h4>
+                            <span>Design with meaning</span>
+                        </div>
+                    </article>
+
+                    <article class="featured-silk__tile">
+                        <div class="featured-silk__tile-image">
+                            <img src="assets/images/occasionEdit.jpeg"
+                                alt="Model wearing an ornate deep burgundy silk saree" loading="lazy">
+                            <span class="featured-silk__tile-index">03</span>
+                        </div>
+                        <div class="featured-silk__tile-caption">
+                            <h4>The feeling</h4>
+                            <span>Softness in motion</span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Gallery progress indicator -->
+                <div class="featured-silk__progress" aria-hidden="true">
+                    <span id="featured-silk-progress"></span>
+                </div>
+
+                <div class="featured-silk__footer reveal-on-scroll">
+                    <span>CRAFT IS IN THE DETAILS</span>
+                    <span aria-hidden="true">✳</span>
+                    <span>DISCOVER YOUR OWN STORY</span>
+                </div>
+
+            </div>
+        </section>
+        
+
+        <section class="contact-section" id="contact" aria-labelledby="contact-title">
+            <div class="contact-section__inner">
+
+                <!-- Editorial section heading -->
+                <header class="contact-heading reveal-on-scroll">
+                    <span class="section-eyebrow contact-heading__eyebrow">
+                        <span class="section-eyebrow__dot"></span>
+                        Begin a conversation
+                    </span>
+
+                    <span class="contact-heading__index">LET'S CONNECT — 08</span>
+                </header>
+
+                <!-- Main contact layout -->
+                <div class="contact-layout">
+
+                    <!-- Left column: Brand message and contact details -->
+                    <div class="contact-copy">
+                        <p class="contact-copy__overline reveal-on-scroll">
+                            A little more about what you love
+                        </p>
+
+                        <h2 class="contact-copy__title reveal-on-scroll" id="contact-title">
+                            Every story<br />
+                            starts with <em>a hello.</em>
+                        </h2>
+
+                        <p class="contact-copy__description reveal-on-scroll">
+                            Have a question, an idea, or a collection in mind?
+                            We would love to hear from you. Tell us what you're
+                            looking for, and let's start a conversation.
+                        </p>
+
+                        <div class="contact-details reveal-on-scroll">
+                            <div class="contact-detail">
+                                <span class="contact-detail__label">WRITE TO US</span>
+                                <!-- Replace with the company's verified email address. -->
+                                <a class="contact-detail__value" href="mailto:hello@silkweaver.com">
+                                    hello@silkweaver.com
+                                    <span aria-hidden="true">↗</span>
+                                </a>
+                            </div>
+
+                            <div class="contact-detail">
+                                <span class="contact-detail__label">FOLLOW THE JOURNEY</span>
+                                <!-- Replace # with the official social media URL. -->
+                                <a class="contact-detail__value" href="#" aria-label="Visit SILK WEAVER on Instagram"
+                                    data-placeholder-link>
+                                    Instagram
+                                    <span aria-hidden="true">↗</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Decorative textile-inspired motif -->
+                        <div class="contact-motif" aria-hidden="true">
+                            <svg viewBox="0 0 220 100" fill="none">
+                                <path d="M0 50H220" />
+                                <path d="M110 5L155 50L110 95L65 50L110 5Z" />
+                                <path d="M110 22L138 50L110 78L82 50L110 22Z" />
+                                <path d="M110 37L123 50L110 63L97 50L110 37Z" />
+                                <path d="M25 38L37 50L25 62L13 50L25 38Z" />
+                                <path d="M195 38L207 50L195 62L183 50L195 38Z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Right column: Enquiry form -->
+                    <div class="contact-form-panel reveal-on-scroll" data-reveal="scale">
+                        <div class="contact-form-panel__heading">
+                            <span class="contact-form-panel__eyebrow">
+                                YOUR ENQUIRY
+                            </span>
+                            <p>Tell us a little about what you have in mind.</p>
+                        </div>
+
+                        <form class="contact-form" id="contact-form">
+                            <div class="contact-form__row">
+                                <div class="form-field">
+                                    <label for="contact-name">Your name <span>*</span></label>
+                                    <input id="contact-name" name="name" type="text" placeholder="Enter your name"
+                                        autocomplete="name" required minlength="2" maxlength="100" />
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="contact-email">Email address <span>*</span></label>
+                                    <input id="contact-email" name="email" type="email" placeholder="you@example.com"
+                                        autocomplete="email" required maxlength="254" />
+                                </div>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="contact-interest">What are you interested in?</label>
+                                <div class="form-field__select-wrap">
+                                    <select id="contact-interest" name="interest">
+                                        <option value="">Choose an enquiry type</option>
+                                        <option value="collections">Silk collections</option>
+                                        <option value="custom">Custom requirements</option>
+                                        <option value="wholesale">Business or wholesale enquiry</option>
+                                        <option value="collaboration">Brand collaboration</option>
+                                        <option value="other">Something else</option>
+                                    </select>
+                                    <span class="form-field__select-icon" aria-hidden="true">⌄</span>
+                                </div>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="contact-message">Your message <span>*</span></label>
+                                <textarea id="contact-message" name="message" rows="4"
+                                    placeholder="Tell us what you are looking for..." required minlength="10"
+                                    maxlength="3000"></textarea>
+                                <span class="form-field__hint">
+                                    A few details will help us understand your enquiry.
+                                </span>
+                            </div>
+
+                            <button class="contact-submit" type="submit">
+                                <span>Send your enquiry</span>
+                                <span class="contact-submit__icon" aria-hidden="true">↗</span>
+                            </button>
+
+                            <!-- Updated by JavaScript after client-side validation.
+               This does not confirm delivery to the company. -->
+                            <p class="contact-form__status" id="contact-form-status" role="status" aria-live="polite">
+                            </p>
+
+                            <p class="contact-form__note">
+                                Your details should only be used to respond to your enquiry.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Closing brand statement -->
+                <div class="contact-bottom reveal-on-scroll">
+                    <p>Thoughtfully made. Meaningfully remembered.</p>
+                    <span aria-hidden="true">SILK WEAVER · EST. IN CRAFT</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    
+
+    <footer class="site-footer" id="site-footer">
+        <div class="site-footer__inner">
+
+            <!-- Upper footer: brand and navigation -->
+            <div class="site-footer__main">
+
+                <div class="site-footer__brand">
+                    <a class="site-footer__wordmark" href="#home" aria-label="SILK WEAVER — back to home">
+                        SILK WEAVER
+                        <span aria-hidden="true">®</span>
+                    </a>
+
+                    <p class="site-footer__tagline">
+                        Woven with intention.<br />
+                        Remembered for a lifetime.
+                    </p>
+
+                    <a class="site-footer__email" href="mailto:hello@silkweaver.com">
+                        hello@silkweaver.com
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+
+                <nav class="site-footer__nav" aria-label="Footer navigation">
+                    <div class="site-footer__nav-group">
+                        <span class="site-footer__label">EXPLORE</span>
+                        <a href="#home">Home</a>
+                        <a href="#collection">Collections</a>
+                        <a href="#story">Our story</a>
+                        <a href="#craft">Our craft</a>
+                    </div>
+
+                    <div class="site-footer__nav-group">
+                        <span class="site-footer__label">DISCOVER</span>
+                        <a href="#manifesto">Our philosophy</a>
+                        <a href="#contact">Get in touch</a>
+                        <!-- Replace this placeholder with the verified social URL. -->
+                        <a href="#" data-placeholder-link>Instagram ↗</a>
+                    </div>
+                </nav>
+
+                <!-- Decorative thread-inspired graphic -->
+                <div class="site-footer__motif" aria-hidden="true">
+                    <svg viewBox="0 0 180 180" fill="none">
+                        <circle cx="90" cy="90" r="72" />
+                        <circle cx="90" cy="90" r="57" />
+                        <circle cx="90" cy="90" r="40" />
+                        <path d="M90 8V172M8 90H172" />
+                        <path d="M32 32L148 148M148 32L32 148" />
+                        <path d="M90 51L129 90L90 129L51 90L90 51Z" />
+                        <path d="M90 72L108 90L90 108L72 90L90 72Z" />
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Large visual brand signature -->
+            <a class="site-footer__signature" href="#home" aria-label="Return to SILK WEAVER home">
+                <span>SILK WEAVER</span>
+                <span class="site-footer__signature-arrow" aria-hidden="true">↑</span>
+            </a>
+
+            <!-- Bottom legal and utility row -->
+            <div class="site-footer__bottom">
+                <p class="site-footer__copyright">
+                    © <span id="year"></span> SILK WEAVER. All rights reserved.
+                </p>
+
+                <p class="site-footer__note">
+                    MADE WITH CARE. WORN WITH MEANING.
+                </p>
+
+                <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+                    <span class="back-to-top__label">BACK TO TOP</span>
+
+                    <span class="back-to-top__icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M12 19V5M5.5 11.5L12 5L18.5 11.5" />
+                        </svg>
+                    </span>
+
+                    <svg class="back-to-top__progress" viewBox="0 0 48 48" aria-hidden="true">
+                        <circle class="back-to-top__progress-track" cx="24" cy="24" r="21" />
+                        <circle class="back-to-top__progress-value" id="page-progress" cx="24" cy="24" r="21" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
